@@ -11,10 +11,11 @@ tome como nombre de usuario y así pueda hacer la validación en el login.
 
 Otro punto a tener en cuenta:
 Los roles se insertan mediante query directamente en la tabla roles de la base de datos:
+
 ````
 INSERT INTO `javag6spring`.`roles` (nombre) VALUES ('ROLE_USER');
 INSERT INTO `javag6spring`.`roles` (nombre) VALUES ('ROLE_ADMIN');
-
+````
 
 Como se ve en este caso se insertaron dos roles, de Usuario y de Admin.
 Si recuerdan la penúltima clase, del 28 de abril, en un momento el profesor me hizo crear relaciones entre usuarios y roles directamente en la 
