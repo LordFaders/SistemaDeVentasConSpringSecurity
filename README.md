@@ -1,6 +1,6 @@
 # SistemaDeVentasConSpringSecurity
 
-##
+####
 Notas del proyecto:
 
 Si ven la línea 44 del login.jsp les parecerá raro que el id="email" y type="email" no conincidan con el name="username"
