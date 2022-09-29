@@ -1,6 +1,6 @@
 # SistemaDeVentasConSpringSecurity
 
-###
+##
 Notas del proyecto:
 
 Si ven la línea 44 del login.jsp les parecerá raro que el id="email" y type="email" no conincidan con el name="username"
@@ -14,6 +14,7 @@ Los roles se insertan mediante query directamente en la tabla roles de la base d
 ````
 INSERT INTO `javag6spring`.`roles` (nombre) VALUES ('ROLE_USER');
 INSERT INTO `javag6spring`.`roles` (nombre) VALUES ('ROLE_ADMIN');
+
 
 Como se ve en este caso se insertaron dos roles, de Usuario y de Admin.
 Si recuerdan la penúltima clase, del 28 de abril, en un momento el profesor me hizo crear relaciones entre usuarios y roles directamente en la 
