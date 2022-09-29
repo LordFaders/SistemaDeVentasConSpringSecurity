@@ -2,12 +2,15 @@
 
 Sistema de ventas desarrollado en Spring Boot
 
+###
 Notas del proyecto:
+````
 Si ven la línea 44 del login.jsp les parecerá raro que el id="email" y type="email" no conincidan con el name="username"
 Para referirnos a esto iremos a la clase UserDetailsServiceImpl.java en el package securingweb:
 Esta diferencia entre id y name se debe a que "engañamos" a Spring security con el método loadByUserName de dicha clase instanciando un Usuario pero
 llamando al método findByEmail del usuarioRepository. Entonces lo que se hace es castear el email asignándole el nombre username para que Spring lo
 tome como nombre de usuario y así pueda hacer la validación en el login.
+````
 
 Otro punto a tener en cuenta:
 Los roles se insertan mediante query directamente en la tabla roles de la base de datos:
